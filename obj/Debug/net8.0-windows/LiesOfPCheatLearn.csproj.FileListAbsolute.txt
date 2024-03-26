@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\bin\Debug\net8.0-windows\LiesOfPCheatLearn.exe
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\bin\Debug\net8.0-windows\LiesOfPCheatLearn.deps.json
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\bin\Debug\net8.0-windows\LiesOfPCheatLearn.runtimeconfig.json
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\bin\Debug\net8.0-windows\LiesOfPCheatLearn.dll
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\bin\Debug\net8.0-windows\LiesOfPCheatLearn.pdb
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\LiesOfPCheatLearn.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\LiesOfPCheatLearn.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\LiesOfPCheatLearn.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\LiesOfPCheatLearn.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\LiesOfPCheatLearn.dll
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\refint\LiesOfPCheatLearn.dll
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\LiesOfPCheatLearn.pdb
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\LiesOfPCheatLearn.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\LiesOfPCheatLearn\obj\Debug\net8.0-windows\ref\LiesOfPCheatLearn.dll
