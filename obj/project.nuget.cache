@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cC7szT16ClObMI04KdDZODklVFhk+n6V1kXr3ul3jdRQvnYGnoxAHHe9Q6NFNe/eI9DUFYIgRFQNkeghsZR50g==",
+  "dgSpecHash": "vXc6/XxS9ZGKjDdWt4RFH92Jv4OnSsj/iNzKoOZ7eqRpTBaP2cR9a6InHc0acaS8anDSTaKkY+aYIu3GxWBamg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\LiesOfPCheatLearn.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\swed64\\1.0.5\\swed64.1.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

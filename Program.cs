@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System;
 namespace LiesOfPCheatLearn;
 
 static class Program
