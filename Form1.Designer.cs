@@ -29,11 +29,12 @@ partial class Form1
     private void InitializeComponent()
     {
         label1 = new Label();
-        Infitelife = new CheckBox();
+        Infiteergos = new CheckBox();
         InfiniteStamina = new CheckBox();
         InfiniteVitalCells = new CheckBox();
         Frezzyposition = new CheckBox();
         label2 = new Label();
+        Infinitehealth = new CheckBox();
         SuspendLayout();
         // 
         // label1
@@ -45,21 +46,21 @@ partial class Form1
         label1.Text = "Funções do Trainer";
         label1.TextAlign = ContentAlignment.MiddleCenter;
         // 
-        // Infitelife
+        // Infiteergos
         // 
-        Infitelife.AutoSize = true;
-        Infitelife.Location = new Point(63, 57);
-        Infitelife.Name = "Infitelife";
-        Infitelife.Size = new Size(85, 19);
-        Infitelife.TabIndex = 2;
-        Infitelife.Text = "Infinite Life";
-        Infitelife.UseVisualStyleBackColor = true;
-        Infitelife.CheckedChanged += Infitelife_CheckedChanged;
+        Infiteergos.AutoSize = true;
+        Infiteergos.Location = new Point(63, 57);
+        Infiteergos.Name = "Infiteergos";
+        Infiteergos.Size = new Size(95, 19);
+        Infiteergos.TabIndex = 2;
+        Infiteergos.Text = "Infinite Ergos";
+        Infiteergos.UseVisualStyleBackColor = true;
+        Infiteergos.CheckedChanged += Infiteergos_CheckedChanged;
         // 
         // InfiniteStamina
         // 
         InfiniteStamina.AutoSize = true;
-        InfiniteStamina.Location = new Point(63, 82);
+        InfiniteStamina.Location = new Point(63, 132);
         InfiniteStamina.Name = "InfiniteStamina";
         InfiniteStamina.Size = new Size(109, 19);
         InfiniteStamina.TabIndex = 3;
@@ -70,7 +71,7 @@ partial class Form1
         // InfiniteVitalCells
         // 
         InfiniteVitalCells.AutoSize = true;
-        InfiniteVitalCells.Location = new Point(63, 107);
+        InfiniteVitalCells.Location = new Point(63, 82);
         InfiniteVitalCells.Name = "InfiniteVitalCells";
         InfiniteVitalCells.Size = new Size(117, 19);
         InfiniteVitalCells.TabIndex = 4;
@@ -81,7 +82,7 @@ partial class Form1
         // Frezzyposition
         // 
         Frezzyposition.AutoSize = true;
-        Frezzyposition.Location = new Point(63, 132);
+        Frezzyposition.Location = new Point(63, 157);
         Frezzyposition.Name = "Frezzyposition";
         Frezzyposition.Size = new Size(104, 19);
         Frezzyposition.TabIndex = 7;
@@ -98,16 +99,28 @@ partial class Form1
         label2.Text = "Valores atuais do Trainer";
         label2.TextAlign = ContentAlignment.MiddleCenter;
         // 
+        // Infinitehealth
+        // 
+        Infinitehealth.AutoSize = true;
+        Infinitehealth.Location = new Point(63, 107);
+        Infinitehealth.Name = "Infinitehealth";
+        Infinitehealth.Size = new Size(101, 19);
+        Infinitehealth.TabIndex = 9;
+        Infinitehealth.Text = "Infinite Health";
+        Infinitehealth.UseVisualStyleBackColor = true;
+        Infinitehealth.CheckedChanged += Infinitehealth_CheckedChanged;
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(538, 194);
+        ClientSize = new Size(538, 247);
+        Controls.Add(Infinitehealth);
         Controls.Add(label2);
         Controls.Add(Frezzyposition);
         Controls.Add(InfiniteVitalCells);
         Controls.Add(InfiniteStamina);
-        Controls.Add(Infitelife);
+        Controls.Add(Infiteergos);
         Controls.Add(label1);
         Name = "Form1";
         Text = "Form1";
@@ -118,9 +131,10 @@ partial class Form1
     #endregion
 
     private Label label1;
-        private CheckBox Infitelife;
+        private CheckBox Infiteergos;
         private CheckBox InfiniteStamina;
         private CheckBox InfiniteVitalCells;
         private CheckBox Frezzyposition;
     private Label label2;
+    private CheckBox Infinitehealth;
 }

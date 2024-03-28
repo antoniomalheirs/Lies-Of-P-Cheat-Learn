@@ -20,6 +20,16 @@ namespace LiesOfPCheatLearn
             readermen.WriteInt(pointer+offset, ergos);
         }
 
+        public void frezVitalCells(IntPtr pointer, int offset, int vital)
+        {
+            readermen.WriteInt(pointer+offset, vital);
+        }
+
+        public void frezHealth(IntPtr pointer, int offset, int health)
+        {
+            readermen.WriteInt(pointer+offset, health);
+        }
+
 
 
 

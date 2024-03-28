@@ -30,8 +30,8 @@ namespace LiesOfPCheatLearn
         public int[] Health = { 0x40, 0x110, 0x160, 0x40, 0xE0, 0x28, 0xC };
 
         private IntPtr ergocells;
-        private int vitalcells;
-        private int health;
+        private IntPtr vitalcells;
+        private IntPtr health;
 
 
         public Player()
@@ -46,21 +46,22 @@ namespace LiesOfPCheatLearn
             level2ptr = readermen.ReadPointer(baseptr, ErgoCells[0]);
             level3ptr = readermen.ReadPointer(level2ptr, ErgoCells[1]);
             level4ptr = readermen.ReadPointer(level3ptr, ErgoCells[2]);
-            return level4ptr;
+            ergocells = level4ptr;
+            return ergocells;
         }
 
-        public int getVitalCells()
+        public IntPtr getVitalCells()
         {
             var funPtr = readermen.GetModuleBase(".exe");
             baseptr = readermen.ReadPointer(funPtr, vitalobject);
             level2ptr = readermen.ReadPointer(baseptr, VitalCells[0]);
             level3ptr = readermen.ReadPointer(level2ptr, VitalCells[1]);
             level4ptr = readermen.ReadPointer(level3ptr, VitalCells[2]);
-            vitalcells = readermen.ReadInt(level4ptr, VitalCells[3]);
+            vitalcells = level4ptr;
             return vitalcells;
         }
 
-        public int getHealth()
+        public IntPtr getHealth()
         {
             var funPtr = readermen.GetModuleBase(".exe");
             baseptr = readermen.ReadPointer(funPtr, healthobject);
@@ -70,7 +71,7 @@ namespace LiesOfPCheatLearn
             level5ptr = readermen.ReadPointer(level4ptr, Health[3]);
             level6ptr = readermen.ReadPointer(level5ptr, Health[4]);
             level7ptr = readermen.ReadPointer(level6ptr, Health[5]);
-            health = readermen.ReadInt(level7ptr, Health[6]);
+            health = level7ptr;
             return health;
         }
     }
