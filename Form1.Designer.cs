@@ -33,6 +33,7 @@ partial class Form1
         InfiniteStamina = new CheckBox();
         InfiniteVitalCells = new CheckBox();
         Frezzyposition = new CheckBox();
+        label2 = new Label();
         SuspendLayout();
         // 
         // label1
@@ -88,11 +89,21 @@ partial class Form1
         Frezzyposition.UseVisualStyleBackColor = true;
         Frezzyposition.CheckedChanged += Frezzyposition_CheckedChanged;
         // 
+        // label2
+        // 
+        label2.Location = new Point(244, 35);
+        label2.Name = "label2";
+        label2.Size = new Size(139, 19);
+        label2.TabIndex = 8;
+        label2.Text = "Valores atuais do Trainer";
+        label2.TextAlign = ContentAlignment.MiddleCenter;
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(232, 194);
+        ClientSize = new Size(538, 194);
+        Controls.Add(label2);
         Controls.Add(Frezzyposition);
         Controls.Add(InfiniteVitalCells);
         Controls.Add(InfiniteStamina);
@@ -111,5 +122,5 @@ partial class Form1
         private CheckBox InfiniteStamina;
         private CheckBox InfiniteVitalCells;
         private CheckBox Frezzyposition;
-    
+    private Label label2;
 }
