@@ -30,8 +30,29 @@ namespace LiesOfPCheatLearn
             readermen.WriteInt(pointer+offset, health);
         }
 
+        public void frezStamina(IntPtr pointer, int offset, int stamina)
+        {
+            readermen.WriteInt(pointer+offset, stamina);
+        }
 
+        public int getErgoCells(IntPtr pointer, int offset)
+        {
+            return readermen.ReadInt(pointer + offset);
+        }
 
+        public int getVitalCells(IntPtr pointer, int offset)
+        {
+            return readermen.ReadInt(pointer + offset);
+        }
 
+        public int getHealth(IntPtr pointer, int offset)
+        {
+            return readermen.ReadInt(pointer + offset);
+        }
+
+        public int getStamina(IntPtr pointer, int offset)
+        {
+            return  readermen.ReadInt(pointer + offset);
+        }
     }
 }

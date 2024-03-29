@@ -2,19 +2,30 @@ namespace LiesOfPCheatLearn;
 
 public partial class Form1 : Form
 {
-    static bool healthrun, ergorun, vitalrun, pbulletsrun, explosiverun;
+    static bool healthrun, ergorun, vitalrun, staminarun, explosiverun;
 
-    static CancellationTokenSource heatlhtask, ergotask, vitaltask, pbulletstask, explosivetask;
+    private static CancellationTokenSource heatlhtask, ergotask, vitaltask, staminatask;
     private SynchronizationContext synchronizationContext;
 
-    static Player cplayer;
-    static Injetor cinjetor;
+    private static Player cplayer;
+    private static Injetor cinjetor;
 
     public Form1()
     {
         InitializeComponent();
+
         cplayer = new Player();
         cinjetor = new Injetor();
+
+        var valueS = cinjetor.getStamina(cplayer.getStamina(), cplayer.Stamina[5]);
+        var valueH = cinjetor.getHealth(cplayer.getHealth(), cplayer.Health[6]);
+        var valueE = cinjetor.getErgoCells(cplayer.getErgoCells(), cplayer.ErgoCells[3]);
+        var valueV = cinjetor.getVitalCells(cplayer.getVitalCells(), cplayer.VitalCells[3]);
+        
+        viewS.Text = valueS.ToString();
+        viewH.Text = valueH.ToString();
+        viewE.Text = valueE.ToString();
+        viewV.Text = valueV.ToString();
     }
 
     private void Infiteergos_CheckedChanged(object sender, EventArgs e)
@@ -47,7 +58,7 @@ public partial class Form1 : Form
     {
         if (Infinitehealth.Checked == true)
         {
-            MessageBox.Show("O valor de VitalCells é: " + cplayer.getHealth(), "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("O valor de VitalCells é: " + cplayer.getHealth(), "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Healthrun();
         }
         else
@@ -58,12 +69,21 @@ public partial class Form1 : Form
 
     private void InfiniteStamina_CheckedChanged(object sender, EventArgs e)
     {
+        if (InfiniteStamina.Checked == true)
+        {
+            //MessageBox.Show("O valor de VitalCells é: " + cplayer.getStamina(), "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Staminarun();
+        }
+        else
+        {
+            StopStaminarun();
+        }
 
     }
 
     private void Frezzyposition_CheckedChanged(object sender, EventArgs e)
     {
-        
+
     }
 
     private static void Ergorun()
@@ -150,6 +170,35 @@ public partial class Form1 : Form
             heatlhtask.Cancel();
             heatlhtask.Dispose();
             heatlhtask = null;
+        }
+    }
+
+    private static void Staminarun()
+    {
+        staminatask = new CancellationTokenSource();
+        CancellationToken Kcancel = staminatask.Token;
+        staminarun = true;
+
+        Task.Run(() =>
+        {
+            while (!Kcancel.IsCancellationRequested)
+            {
+                cinjetor.frezStamina(cplayer.getStamina(), cplayer.Stamina[5], 250);
+                Thread.Sleep(100);
+            }
+
+            staminarun = false;
+        });
+    }
+
+    private static void StopStaminarun()
+    {
+        if (staminarun)
+        {
+            cinjetor.frezStamina(cplayer.getStamina(), cplayer.Stamina[5], 193);
+            staminatask.Cancel();
+            staminatask.Dispose();
+            staminatask = null;
         }
     }
 }

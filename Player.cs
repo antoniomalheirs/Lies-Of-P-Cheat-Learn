@@ -11,27 +11,30 @@ namespace LiesOfPCheatLearn
     {
         private Swed readermen;
 
-        public IntPtr baseptr;
-        public IntPtr level2ptr;
-        public IntPtr level3ptr;
-        public IntPtr level4ptr;
-        public IntPtr level5ptr;
-        public IntPtr level6ptr;
-        public IntPtr level7ptr;
-        public IntPtr level8ptr;
+        private IntPtr baseptr;
+        private IntPtr level2ptr;
+        private IntPtr level3ptr;
+        private IntPtr level4ptr;
+        private IntPtr level5ptr;
+        private IntPtr level6ptr;
+        private IntPtr level7ptr;
+        private IntPtr level8ptr;
 
 
-        public int ergoobject = 0x07203780;
-        public int vitalobject = 0x07203808;
-        public int healthobject = 0x07196938;
+        private int ergoobject = 0x07203780;
+        private int vitalobject = 0x07203808;
+        private int healthobject = 0x07196938;
+        private int staminaobject = 0x0735BCC8;
 
         public int[] ErgoCells = { 0x618, 0x648, 0xA0, 0xA4};
         public int[] VitalCells = { 0x180, 0x1A0, 0x0, 0x40 };
         public int[] Health = { 0x40, 0x110, 0x160, 0x40, 0xE0, 0x28, 0xC };
+        public int[] Stamina = { 0x0, 0x20, 0x848, 0xE0, 0x28, 0x3C };
 
         private IntPtr ergocells;
         private IntPtr vitalcells;
         private IntPtr health;
+        private IntPtr stamina;
 
 
         public Player()
@@ -73,6 +76,21 @@ namespace LiesOfPCheatLearn
             level7ptr = readermen.ReadPointer(level6ptr, Health[5]);
             health = level7ptr;
             return health;
+        }
+
+        public IntPtr getStamina()
+        {
+            var fundPtr = readermen.GetModuleBase(".exe");
+            baseptr = readermen.ReadPointer(fundPtr, staminaobject);
+            level2ptr = readermen.ReadPointer(baseptr, Stamina[0]);
+            level3ptr = readermen.ReadPointer(level2ptr, Stamina[1]);
+            level4ptr = readermen.ReadPointer(level3ptr, Stamina[2]);
+            level5ptr = readermen.ReadPointer(level4ptr, Stamina[3]);
+            level6ptr = readermen.ReadPointer(level5ptr, Stamina[4]);
+            stamina = level6ptr;
+            return stamina;
+
+
         }
     }
 }

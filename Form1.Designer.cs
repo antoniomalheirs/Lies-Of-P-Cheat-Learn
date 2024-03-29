@@ -35,6 +35,14 @@ partial class Form1
         Frezzyposition = new CheckBox();
         label2 = new Label();
         Infinitehealth = new CheckBox();
+        Ergoview = new Label();
+        Vitalcellsview = new Label();
+        Healthview = new Label();
+        Staminaview = new Label();
+        viewE = new Label();
+        viewV = new Label();
+        viewH = new Label();
+        viewS = new Label();
         SuspendLayout();
         // 
         // label1
@@ -110,11 +118,91 @@ partial class Form1
         Infinitehealth.UseVisualStyleBackColor = true;
         Infinitehealth.CheckedChanged += Infinitehealth_CheckedChanged;
         // 
+        // Ergoview
+        // 
+        Ergoview.AutoSize = true;
+        Ergoview.Location = new Point(244, 58);
+        Ergoview.Name = "Ergoview";
+        Ergoview.Size = new Size(31, 15);
+        Ergoview.TabIndex = 10;
+        Ergoview.Text = "Ergo";
+        // 
+        // Vitalcellsview
+        // 
+        Vitalcellsview.AutoSize = true;
+        Vitalcellsview.Location = new Point(244, 82);
+        Vitalcellsview.Name = "Vitalcellsview";
+        Vitalcellsview.Size = new Size(58, 15);
+        Vitalcellsview.TabIndex = 11;
+        Vitalcellsview.Text = "Vital Cells";
+        // 
+        // Healthview
+        // 
+        Healthview.AutoSize = true;
+        Healthview.Location = new Point(244, 107);
+        Healthview.Name = "Healthview";
+        Healthview.Size = new Size(42, 15);
+        Healthview.TabIndex = 12;
+        Healthview.Text = "Health";
+        // 
+        // Staminaview
+        // 
+        Staminaview.AutoSize = true;
+        Staminaview.Location = new Point(244, 132);
+        Staminaview.Name = "Staminaview";
+        Staminaview.Size = new Size(50, 15);
+        Staminaview.TabIndex = 13;
+        Staminaview.Text = "Stamina";
+        // 
+        // viewE
+        // 
+        viewE.AutoSize = true;
+        viewE.Location = new Point(345, 57);
+        viewE.Name = "viewE";
+        viewE.Size = new Size(38, 15);
+        viewE.TabIndex = 14;
+        viewE.Text = "label3";
+        // 
+        // viewV
+        // 
+        viewV.AutoSize = true;
+        viewV.Location = new Point(345, 82);
+        viewV.Name = "viewV";
+        viewV.Size = new Size(38, 15);
+        viewV.TabIndex = 15;
+        viewV.Text = "label3";
+        // 
+        // viewH
+        // 
+        viewH.AutoSize = true;
+        viewH.Location = new Point(345, 107);
+        viewH.Name = "viewH";
+        viewH.Size = new Size(38, 15);
+        viewH.TabIndex = 16;
+        viewH.Text = "label3";
+        // 
+        // viewS
+        // 
+        viewS.AutoSize = true;
+        viewS.Location = new Point(345, 132);
+        viewS.Name = "viewS";
+        viewS.Size = new Size(38, 15);
+        viewS.TabIndex = 17;
+        viewS.Text = "label3";
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(538, 247);
+        Controls.Add(viewS);
+        Controls.Add(viewH);
+        Controls.Add(viewV);
+        Controls.Add(viewE);
+        Controls.Add(Staminaview);
+        Controls.Add(Healthview);
+        Controls.Add(Vitalcellsview);
+        Controls.Add(Ergoview);
         Controls.Add(Infinitehealth);
         Controls.Add(label2);
         Controls.Add(Frezzyposition);
@@ -137,4 +225,12 @@ partial class Form1
         private CheckBox Frezzyposition;
     private Label label2;
     private CheckBox Infinitehealth;
+    private Label Ergoview;
+    private Label Vitalcellsview;
+    private Label Healthview;
+    private Label Staminaview;
+    private Label viewE;
+    private Label viewV;
+    private Label viewH;
+    private Label viewS;
 }
