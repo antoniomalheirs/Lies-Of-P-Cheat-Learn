@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LiesOfPCheatLearn")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27546350bb2ae95e5233d417d1c2a938edb9a5fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4adce3a6702f8c17e3d151843183b65f8046933a")]
 [assembly: System.Reflection.AssemblyProductAttribute("LiesOfPCheatLearn")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LiesOfPCheatLearn")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

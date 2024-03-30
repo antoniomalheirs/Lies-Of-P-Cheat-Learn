@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace LiesOfPCheatLearn
 {
@@ -25,16 +26,22 @@ namespace LiesOfPCheatLearn
         private int vitalobject = 0x07203808;
         private int healthobject = 0x07196938;
         private int staminaobject = 0x0735BCC8;
+        private int objectlegionarm = 0x07196938;
+        private int objectfabulosattack = 0x07196938;
 
         public int[] ErgoCells = { 0x618, 0x648, 0xA0, 0xA4};
         public int[] VitalCells = { 0x180, 0x1A0, 0x0, 0x40 };
         public int[] Health = { 0x40, 0x110, 0x160, 0x40, 0xE0, 0x28, 0xC };
         public int[] Stamina = { 0x0, 0x20, 0x848, 0xE0, 0x28, 0x3C };
+        public int[] LegionArm = { 0x10, 0x240, 0x848, 0xE0, 0x28, 0xCC };
+        public int[] FabulosAttack = { 0x10, 0x240, 0x848, 0xE0, 0x28, 0x6C };
 
         private IntPtr ergocells;
         private IntPtr vitalcells;
         private IntPtr health;
         private IntPtr stamina;
+        private IntPtr legionarm;
+        private IntPtr fabulosattack;
 
 
         public Player()
@@ -89,8 +96,33 @@ namespace LiesOfPCheatLearn
             level6ptr = readermen.ReadPointer(level5ptr, Stamina[4]);
             stamina = level6ptr;
             return stamina;
-
-
         }
+
+        public IntPtr getlegionArm()
+        {
+            var fundPtr = readermen.GetModuleBase(".exe");
+            baseptr = readermen.ReadPointer(fundPtr, objectlegionarm);
+            level2ptr = readermen.ReadPointer(baseptr, LegionArm[0]);
+            level3ptr = readermen.ReadPointer(level2ptr, LegionArm[1]);
+            level4ptr = readermen.ReadPointer(level3ptr, LegionArm[2]);
+            level5ptr = readermen.ReadPointer(level4ptr, LegionArm[3]);
+            level6ptr = readermen.ReadPointer(level5ptr, LegionArm[4]);
+            legionarm = level6ptr;
+            return legionarm;
+        }
+
+        public IntPtr getfabulosAttack()
+        {
+            var fundPtr = readermen.GetModuleBase(".exe");
+            baseptr = readermen.ReadPointer(fundPtr, objectfabulosattack);
+            level2ptr = readermen.ReadPointer(baseptr, FabulosAttack[0]);
+            level3ptr = readermen.ReadPointer(level2ptr, FabulosAttack[1]);
+            level4ptr = readermen.ReadPointer(level3ptr, FabulosAttack[2]);
+            level5ptr = readermen.ReadPointer(level4ptr, FabulosAttack[3]);
+            level6ptr = readermen.ReadPointer(level5ptr, FabulosAttack[4]);
+            fabulosattack = level6ptr;
+            return fabulosattack;
+        }
+
     }
 }

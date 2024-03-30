@@ -21,11 +21,16 @@ public partial class Form1 : Form
         var valueH = cinjetor.getHealth(cplayer.getHealth(), cplayer.Health[6]);
         var valueE = cinjetor.getErgoCells(cplayer.getErgoCells(), cplayer.ErgoCells[3]);
         var valueV = cinjetor.getVitalCells(cplayer.getVitalCells(), cplayer.VitalCells[3]);
-        
+        var valueLA = cinjetor.getLegionArm(cplayer.getlegionArm(), cplayer.LegionArm[5]);
+        var valueFA = cinjetor.getFabulosAttack(cplayer.getfabulosAttack(), cplayer.FabulosAttack[5]);
+
+
         viewS.Text = valueS.ToString();
         viewH.Text = valueH.ToString();
         viewE.Text = valueE.ToString();
         viewV.Text = valueV.ToString();
+        viewLA.Text = valueLA.ToString();
+        viewFA.Text = valueFA.ToString();
     }
 
     private void Infiteergos_CheckedChanged(object sender, EventArgs e)
@@ -78,6 +83,16 @@ public partial class Form1 : Form
         {
             StopStaminarun();
         }
+
+    }
+
+    private void InfiteArm_CheckedChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void InfiniteFabulosAttack_CheckedChanged(object sender, EventArgs e)
+    {
 
     }
 
@@ -201,4 +216,11 @@ public partial class Form1 : Form
             staminatask = null;
         }
     }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    
 }

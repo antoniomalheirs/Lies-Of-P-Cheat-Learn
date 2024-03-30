@@ -43,6 +43,12 @@ partial class Form1
         viewV = new Label();
         viewH = new Label();
         viewS = new Label();
+        InfiniteFabulosAttack = new CheckBox();
+        InfiteArm = new CheckBox();
+        viewLA = new Label();
+        label4 = new Label();
+        viewFA = new Label();
+        label6 = new Label();
         SuspendLayout();
         // 
         // label1
@@ -90,7 +96,7 @@ partial class Form1
         // Frezzyposition
         // 
         Frezzyposition.AutoSize = true;
-        Frezzyposition.Location = new Point(63, 157);
+        Frezzyposition.Location = new Point(63, 207);
         Frezzyposition.Name = "Frezzyposition";
         Frezzyposition.Size = new Size(104, 19);
         Frezzyposition.TabIndex = 7;
@@ -190,11 +196,75 @@ partial class Form1
         viewS.TabIndex = 17;
         viewS.Text = "label3";
         // 
+        // InfiniteFabulosAttack
+        // 
+        InfiniteFabulosAttack.AutoSize = true;
+        InfiniteFabulosAttack.Location = new Point(63, 182);
+        InfiniteFabulosAttack.Name = "InfiniteFabulosAttack";
+        InfiniteFabulosAttack.Size = new Size(144, 19);
+        InfiniteFabulosAttack.TabIndex = 18;
+        InfiniteFabulosAttack.Text = "Infinite Fabulos Attack";
+        InfiniteFabulosAttack.UseVisualStyleBackColor = true;
+        InfiniteFabulosAttack.CheckedChanged += InfiniteFabulosAttack_CheckedChanged;
+        // 
+        // InfiteArm
+        // 
+        InfiteArm.AutoSize = true;
+        InfiteArm.Location = new Point(63, 157);
+        InfiteArm.Name = "InfiteArm";
+        InfiteArm.Size = new Size(128, 19);
+        InfiteArm.TabIndex = 19;
+        InfiteArm.Text = "Infinite Legion Arm";
+        InfiteArm.UseVisualStyleBackColor = true;
+        InfiteArm.CheckedChanged += InfiteArm_CheckedChanged;
+        // 
+        // viewLA
+        // 
+        viewLA.AutoSize = true;
+        viewLA.Location = new Point(345, 157);
+        viewLA.Name = "viewLA";
+        viewLA.Size = new Size(38, 15);
+        viewLA.TabIndex = 21;
+        viewLA.Text = "label3";
+        // 
+        // label4
+        // 
+        label4.AutoSize = true;
+        label4.Location = new Point(244, 157);
+        label4.Name = "label4";
+        label4.Size = new Size(50, 15);
+        label4.TabIndex = 20;
+        label4.Text = "Stamina";
+        // 
+        // viewFA
+        // 
+        viewFA.AutoSize = true;
+        viewFA.Location = new Point(345, 182);
+        viewFA.Name = "viewFA";
+        viewFA.Size = new Size(38, 15);
+        viewFA.TabIndex = 23;
+        viewFA.Text = "label3";
+        // 
+        // label6
+        // 
+        label6.AutoSize = true;
+        label6.Location = new Point(244, 182);
+        label6.Name = "label6";
+        label6.Size = new Size(50, 15);
+        label6.TabIndex = 22;
+        label6.Text = "Stamina";
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(538, 247);
+        Controls.Add(viewFA);
+        Controls.Add(label6);
+        Controls.Add(viewLA);
+        Controls.Add(label4);
+        Controls.Add(InfiteArm);
+        Controls.Add(InfiniteFabulosAttack);
         Controls.Add(viewS);
         Controls.Add(viewH);
         Controls.Add(viewV);
@@ -212,6 +282,7 @@ partial class Form1
         Controls.Add(label1);
         Name = "Form1";
         Text = "Form1";
+        Load += Form1_Load;
         ResumeLayout(false);
         PerformLayout();
     }
@@ -233,4 +304,10 @@ partial class Form1
     private Label viewV;
     private Label viewH;
     private Label viewS;
+    private CheckBox InfiniteFabulosAttack;
+    private CheckBox InfiteArm;
+    private Label viewLA;
+    private Label label4;
+    private Label viewFA;
+    private Label label6;
 }

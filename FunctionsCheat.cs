@@ -35,6 +35,15 @@ namespace LiesOfPCheatLearn
             readermen.WriteInt(pointer+offset, stamina);
         }
 
+        public void frezlegionArm(IntPtr pointer, int offset, int armcount)
+        {
+            readermen.WriteInt(pointer + offset, armcount);
+        }
+        public void frezfabulosAttack(IntPtr pointer, int offset, int fabuloscount)
+        {
+            readermen.WriteInt(pointer + offset, fabuloscount);
+        }
+
         public int getErgoCells(IntPtr pointer, int offset)
         {
             return readermen.ReadInt(pointer + offset);
@@ -53,6 +62,16 @@ namespace LiesOfPCheatLearn
         public int getStamina(IntPtr pointer, int offset)
         {
             return  readermen.ReadInt(pointer + offset);
+        }
+
+        public int getLegionArm(IntPtr pointer, int offset)
+        {
+            return readermen.ReadInt(pointer + offset);
+        }
+
+        public int getFabulosAttack(IntPtr pointer, int offset)
+        {
+            return readermen.ReadInt(pointer + offset);
         }
     }
 }
