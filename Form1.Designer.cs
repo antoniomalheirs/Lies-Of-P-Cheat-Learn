@@ -232,9 +232,9 @@ partial class Form1
         label4.AutoSize = true;
         label4.Location = new Point(244, 157);
         label4.Name = "label4";
-        label4.Size = new Size(50, 15);
+        label4.Size = new Size(69, 15);
         label4.TabIndex = 20;
-        label4.Text = "Stamina";
+        label4.Text = "Legion Arm";
         // 
         // viewFA
         // 
@@ -250,9 +250,9 @@ partial class Form1
         label6.AutoSize = true;
         label6.Location = new Point(244, 182);
         label6.Name = "label6";
-        label6.Size = new Size(50, 15);
+        label6.Size = new Size(85, 15);
         label6.TabIndex = 22;
-        label6.Text = "Stamina";
+        label6.Text = "Fabulos Attack";
         // 
         // Form1
         // 

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|c:\\users\\administrator\\desktop\\liesofpcheatlearn\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|c:\\users\\administrator\\desktop\\liesofpcheatlearn\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\functionscheat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|solutionrelative:functionscheat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA1D9A1B-5F30-454C-9124-A7FA057506E3}|LiesOfPCheatLearn.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAL0AAAAAAAAAAAAiwCEAAAAFAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAG0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T07:01:23.376Z",
               "IsPinned": true,
@@ -56,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -74,23 +74,21 @@
               "RelativeDocumentMoniker": "FunctionsCheat.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\FunctionsCheat.cs",
               "RelativeToolTip": "FunctionsCheat.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAcwEcAAAAjAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T05:01:29.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T05:01:29.594Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\LiesOfPCheatLearn\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAQwGkAAABHAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAADwv2QAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T07:11:36.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T07:11:36.821Z"
             }
           ]
         }

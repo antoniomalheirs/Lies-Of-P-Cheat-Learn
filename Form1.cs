@@ -1,10 +1,13 @@
+using System.Threading.Tasks;
+using System.Threading;
+
 namespace LiesOfPCheatLearn;
 
 public partial class Form1 : Form
 {
-    static bool healthrun, ergorun, vitalrun, staminarun, explosiverun;
+    static bool healthrun, ergorun, vitalrun, staminarun, legionarmrun, fabulosattackrun;
 
-    private static CancellationTokenSource heatlhtask, ergotask, vitaltask, staminatask;
+    private static CancellationTokenSource heatlhtask, ergotask, vitaltask, staminatask, legionarmtask, fabulosattacktask;
     private SynchronizationContext synchronizationContext;
 
     private static Player cplayer;
@@ -88,12 +91,28 @@ public partial class Form1 : Form
 
     private void InfiteArm_CheckedChanged(object sender, EventArgs e)
     {
-
+        if (InfiteArm.Checked == true)
+        {
+            //MessageBox.Show("O valor de VitalCells é: " + cplayer.getlegionArm(), "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Legionarmrun();
+        }
+        else
+        {
+            StopLegionarm();
+        }
     }
 
     private void InfiniteFabulosAttack_CheckedChanged(object sender, EventArgs e)
     {
-
+        if (InfiniteFabulosAttack.Checked == true)
+        {
+            //MessageBox.Show("O valor de VitalCells é: " + cplayer.getlegionArm(), "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Fabulosattackrun();
+        }
+        else
+        {
+            StopFabulosattack();
+        }
     }
 
     private void Frezzyposition_CheckedChanged(object sender, EventArgs e)
@@ -217,6 +236,64 @@ public partial class Form1 : Form
         }
     }
 
+    private static void Legionarmrun()
+    {
+        legionarmtask = new CancellationTokenSource();
+        CancellationToken Kcancel = legionarmtask.Token;
+        legionarmrun = true;
+
+        Task.Run(() =>
+        {
+            while (!Kcancel.IsCancellationRequested)
+            {
+                cinjetor.frezlegionArm(cplayer.getlegionArm(), cplayer.LegionArm[5], 280);
+                Thread.Sleep(100);
+            }
+
+            legionarmrun = false;
+        });
+    }
+
+    private static void StopLegionarm()
+    {
+        if (legionarmrun)
+        {
+            cinjetor.frezlegionArm(cplayer.getlegionArm(), cplayer.LegionArm[5], 243);
+            legionarmtask.Cancel();
+            legionarmtask.Dispose();
+            legionarmtask = null;
+        }
+    }
+    
+    private static void Fabulosattackrun()
+    {
+        fabulosattacktask = new CancellationTokenSource();
+        CancellationToken Kcancel = fabulosattacktask.Token;
+        fabulosattackrun = true;
+
+        Task.Run(() =>
+        {
+            while (!Kcancel.IsCancellationRequested)
+            {
+                cinjetor.frezfabulosAttack(cplayer.getfabulosAttack(), cplayer.FabulosAttack[5], 12000);
+                Thread.Sleep(100);
+            }
+
+            fabulosattackrun = false;
+        });
+    }
+
+    private static void StopFabulosattack()
+    {
+        if (fabulosattackrun)
+        {
+            cinjetor.frezfabulosAttack(cplayer.getfabulosAttack(), cplayer.FabulosAttack[5], 0);
+            fabulosattacktask.Cancel();
+            fabulosattacktask.Dispose();
+            fabulosattacktask = null;
+        }
+    }
+    
     private void Form1_Load(object sender, EventArgs e)
     {
 
